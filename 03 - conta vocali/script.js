@@ -6,7 +6,7 @@ const word = 'javascript';
 function vowelsCounter(string){
    if(typeof string === 'string'){
     let counter = 0;
-        for(let i=0; i<word.length; i++){
+        for(let i=0; i<string.length; i++){
             let char= string.charAt(i);
             if(char=== 'a'||char=== 'e'||char=== 'i'||char=== 'o'||char=== 'u'){
                 counter ++;
@@ -14,7 +14,8 @@ function vowelsCounter(string){
         }
         return counter;
    }else{
-        return 
+        let msg ="errore valore non stringa";
+        return msg;
    }
 }
 

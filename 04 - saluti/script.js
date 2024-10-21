@@ -8,7 +8,8 @@ let greeting = (string)=>{
     if(typeof string === 'string'){
         return "ciao "+string;
     }else{
-        return 
+        let msg ="errore valore non stringa";
+        return msg; 
     }
 }
 
