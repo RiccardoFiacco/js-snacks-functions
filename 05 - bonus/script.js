@@ -10,11 +10,23 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 let greeting = (string)=>{
+    const date = new Date();
+    const hour = date.getHours();
+    let msg;
     if(typeof string === 'string'){
-        return "ciao "+string;
+        if(hour>6  && hour<=13){
+            msg = "buongiorno "+string;
+        }else if(hour > 13 && hour<= 17){
+            msg = "buon pomeriggio "+string;
+        }else if( hour > 17 && hour <= 23){
+            msg = "buonasera "+string;
+        }else if( hour > 23 || hour>= 0){
+            msg = "buonanotte "+string;
+        }
     }else{
-        return 
+        msg="non è stata inserita una stringa";  
     }
+    return msg;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
