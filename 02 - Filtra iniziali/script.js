@@ -4,18 +4,21 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function takeFirstLetterWithCondition(array, letter){
-    let firstLetterArray = [];
+function takeName(array, letter){
+    letter = letter.toUpperCase();
+    let filteredArray = [];
     let firstLetter;
     for(let i=0; i< array.length; i++){
         firstLetter = array[i].charAt(0);
-        firstLetterArray.push(firstLetter)
+        if(firstLetter === letter){
+            filteredArray.push(array[i]);
+        }  
     }
-    return firstLetterArray
+    return filteredArray
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(takeName(names, 'a'))
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
