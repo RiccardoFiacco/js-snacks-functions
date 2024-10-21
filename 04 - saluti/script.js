@@ -4,7 +4,13 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+let greeting = (name)=>{
+    if(typeof string === 'string'){
+        
+    }else{
+        return 
+    }
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
