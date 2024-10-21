@@ -4,7 +4,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function takeFirstLetterWithCondition(array, letter){
+    let firstLetterArray = [];
+    let firstLetter;
+    for(let i=0; i< array.length; i++){
+        firstLetter = array[i].charAt(0);
+        firstLetterArray.push(firstLetter)
+    }
+    return firstLetterArray
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
