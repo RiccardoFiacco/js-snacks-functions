@@ -8,10 +8,24 @@ function takeFirstLetter(array){
     let firstLetterArray = [];
     let firstLetter;
     for(let i=0; i< array.length; i++){
-        firstLetter = array[i].charAt(0);
-        firstLetterArray.push(firstLetter)
+        if(isString(array[i])){
+            firstLetter = array[i].charAt(0);
+            firstLetterArray.push(firstLetter)
+        }else{
+            let msg ="errore: il "+ i +" valore non è una stringa";
+            return msg;
+        }
+        
     }
     return firstLetterArray
+}
+
+function isString(string){
+    if(typeof string === 'string'){
+        return true;
+    }else{
+        return false; 
+    }
 }
 // Invoca la funzione qui e stampa il risultato in console
 let result = takeFirstLetter(names);
