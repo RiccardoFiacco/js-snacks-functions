@@ -14,6 +14,7 @@ function takeFirstLetter(array){
     return firstLetterArray
 }
 // Invoca la funzione qui e stampa il risultato in console
-
+let result = takeFirstLetter(names);
+console.log(result);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
