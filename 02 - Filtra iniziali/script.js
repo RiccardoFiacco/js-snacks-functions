@@ -18,7 +18,8 @@ function takeName(array, letter){
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(takeName(names, 'a'))
+let result = takeName(names, 'a');
+console.log(result);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
