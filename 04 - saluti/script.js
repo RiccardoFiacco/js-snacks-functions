@@ -4,16 +4,17 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-let greeting = (name)=>{
+let greeting = (string)=>{
     if(typeof string === 'string'){
-        
+        return "ciao "+string;
     }else{
         return 
     }
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+let result = greeting(name);
+console.log(result);
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
