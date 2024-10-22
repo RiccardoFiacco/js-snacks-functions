@@ -17,9 +17,23 @@ function takeName(array, letter){
     return filteredArray
 }
 
+function getName(array, letter){
+    let filteredArray = [];
+    array.map((el)=>{
+        let app = el.toLowerCase();   
+        if(app[0]===letter){
+                filteredArray.push(el);
+            }
+        }
+    )
+    return filteredArray;
+}
+
+
 // Invoca la funzione qui e stampa il risultato in console
 let result = takeName(names, 'a');
 console.log(result);
-
+let result2 = getName(names, 'l');
+console.log(result2);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

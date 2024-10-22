@@ -27,6 +27,11 @@ function isString(string){
         return false; 
     }
 }
+//seconda soluzione
+
+function getFirstLetter(array){
+    return array.map((el)=>el[0])
+}
 // Invoca la funzione qui e stampa il risultato in console
 let result = takeFirstLetter(names);
 console.log(result);
